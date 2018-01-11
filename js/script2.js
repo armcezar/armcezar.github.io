@@ -1,66 +1,7 @@
-
-var burger = document.querySelector(".bb");
-var mobileNav = document.querySelector("#mobile-nav");
-var positionFixed = document.querySelector(".fixed-position")
-
-
-burger.addEventListener("click", showMenu, false);
-mobileNav.addEventListener("click", hideMenu, false);
-
-function showMenu(e) {
-  mobileNav.classList.add("show");
-  document.body.style.height = "100%";
-  document.body.style.overflow = "hidden";
-  mobileNav.classList.add(".fixed-position");
-}
-
-function hideMenu(e) {
-  mobileNav.classList.remove("show");
-  document.body.style.overflow = "auto";
-  mobileNav.classList.remove(".fixed-position");
-  e.stopPropagation();
-}
-
-
-// Mobile Navigation
-
-var myNav = document.getElementById('mobile-top-nav');
-var upTop = document.getElementById('uptop')
-window.onscroll = function() {
-  "use strict";
-  if (document.body.scrollTop >= 1) {
-    upTop.style.opacity = "0";
-    myNav.style.opacity = "0";
-    myNav.classList.add("nav-transparent");
-    myNav.classList.remove("nav-colored");
-
-  } else {
-    upTop.style.opacity = "1";
-    myNav.style.opacity = "1";
-    myNav.classList.add("nav-colored");
-    myNav.classList.remove("nav-transparent");
-  }
-};
-
-//  Headroom
-
-
-var myElement = document.querySelector("#mobile-top-nav");
-var headroom  = new Headroom(myElement);
-
-headroom.init();
-
-// UpTop Button
-
-myID = document.getElementById('totop')
-
-var myScrollFunc = function() {
-  var y  = window.scrollY;
-  if (y >= 200) {
-    myID.className = "totop show"
-  } else {
-    myID.className = "totop hide"
-  }
-};
-
-window.addEventListener("scroll", myScrollFunc);
+$("#work-1").hover(function(){$('.overlay').toggleClass("overlay_hover");$('.home-preview-text').toggleClass("home-preview-text_hover fadeInUp")});$("#work-2").hover(function(){$('.overlay2').toggleClass("overlay_hover2");$('.home-preview-text2').toggleClass("home-preview-text_hover2 fadeInUp")});$("#work-3").hover(function(){$('.overlay3').toggleClass("overlay_hover3");$('.home-preview-text3').toggleClass("home-preview-text_hover3 fadeInUp")});$("#work-4").hover(function(){$('.overlay4').toggleClass("overlay_hover4");$('.home-preview-text4').toggleClass("home-preview-text_hover4 fadeInUp")});$("#work-5").hover(function(){$('.overlay5').toggleClass("overlay_hover5");$('.home-preview-text5').toggleClass("home-preview-text_hover5 fadeInUp")});$("#work-6").hover(function(){$('.overlay6').toggleClass("overlay_hover6");$('.home-preview-text6').toggleClass("home-preview-text_hover6 fadeInUp")});(function(){var unload={};unload.init=function(){unload.$html=$(document.documentElement);$(window).on('beforeunload',unload.fadeOut)}
+unload.fadeOut=function(e){unload.$html.addClass('fadeOut');setTimeout(unload.failed,5000)}
+unload.failed=function(){unload.$html.removeClass('fadeOut')}
+$(unload.init);return unload})();$('.menu-wrapper').click(function(e){$('#wrapper-body').toggleClass('hide-links')
+event.stopImmediatePropagation();$('.menu').toggleClass("close");$('header').toggleClass("show");$('#logo').toggleClass("hide");$('body').toggleClass("hide");setTimeout(function(){$('nav').toggleClass("show")},100)});var didScroll;var lastScrollTop=0;var delta=5;var navbarHeight=$('header').outerHeight();$(window).scroll(function(event){didScroll=!0});setInterval(function(){if(didScroll){hasScrolled();didScroll=!1}},250);function hasScrolled(){var st=$(this).scrollTop();if(Math.abs(lastScrollTop-st)<=delta)
+return;if(st>lastScrollTop&&st>navbarHeight){$('header').removeClass('nav-down').addClass('nav-up')}else{if(st+$(window).height()<$(document).height()){$('header').removeClass('nav-up').addClass('nav-down')}}
+lastScrollTop=st}
