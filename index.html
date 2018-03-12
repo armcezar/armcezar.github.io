@@ -1,89 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Creative Illustrator</title>
-  <link href="https://fonts.googleapis.com/css?family=Nunito:400,900" rel="stylesheet">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Quodity - Music Streaming App</title>
 </head>
 
 <body>
-
+  <!-- Header -->
   <header>
     <nav>
-      <ul>
-        <li><a href="index.html" class="fadeInUp"><span>Home</span></a></li>
-        <li><a href="about.html" class="fadeInUp"><span>About</span></a></li>
-        <li><a href="mailto:armcezar@gmail.com" class="fadeInUp"><span>Contact</span></a></li>
+      <img src="img/logo-w.svg" alt="Logo" class="logo-w">
+      <ul class="nav-ul">
+        <li>Plans</li>
+        <li>Trial</li>
       </ul>
     </nav>
-    <a href="index.html"><img src="photos/logo.svg" alt="" id="logo"></a>
-    <div class="menu-wrapper">
-      <div class="menu">
-        <span class="line line01"></span>
-        <span class="line line02"></span>
-      </div>
+    <div id="header-text">
+      <h1>Morning, evening, school, work.
+Two Months. For free.</h1>
+      <button id="header-button">Start Free Trial</button>
     </div>
   </header>
-<div id="wrapper-body">
-    <div id="wrapper" class="fadeInUp">
-      <div id="home">
-        <h1 class="home-text">Hey,<br> I create <br>cool things.</h1>
-      </div>
 
-      <div id="wrapper-work">
-        <div id="work-1">
-          <div class="overlay works">
-            <h1 class="home-preview-text"> Project Title </h1>
-          </div>
-        </div>
-
-        <div id="work-2">
-          <div class="overlay2 works">
-            <h1 class="home-preview-text2"> Project Title </h1>
-          </div>
-        </div>
-
-        <div id="work-3">
-          <div class="overlay3 works">
-            <h1 class="home-preview-text3"> Project Title </h1>
-          </div>
-        </div>
-
-        <div id="work-4">
-          <div class="overlay4 works">
-            <h1 class="home-preview-text4"> Project Title </h1>
-          </div>
-        </div>
-
-        <div id="work-5">
-          <div class="overlay5 works">
-            <h1 class="home-preview-text5"> Project Title </h1>
-          </div>
-        </div>
-
-        <div id="work-6">
-          <div class="overlay6 works">
-            <h1 class="home-preview-text6"> Project Title </h1>
-          </div>
-        </div>
-      </div>
-      <footer>
-        <a href="http://google.com"><i class="fa fa-facebook-f fa-2x"></i></a>
-        <a href="http://google.com"><i class="fa fa-instagram fa-2x"></i></a>
-        <a href="http://google.com"><i class="fa fa-twitter fa-2x"></i></a>
-        <a href="http://google.com"><i class="fa fa-dribbble fa-2x"></i></a>
-      </footer>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="js/script.js">
-
-      </script>
+  <!-- Testimonials -->
+  <div id="testimonials">
+    <div id="test-1">
+      <img src="img/gates.png" alt="Gates" class="gates">
+      <h2 class='test-name'>Bill Gates</h2>
+      <p class="test-des">It's the best music app. I will surely invest a few million bucks into it!</p>
     </div>
-</div>
+
+    <div id="test-2">
+      <img src="img/chance.png" alt="Gates" class="chance">
+      <h2 class='test-name'>Chancelor Bennett</h2>
+      <p class="test-des">Simple, clean and innovative. Amazing.
+      </p>
+    </div>
+
+    <div id="test-3">
+      <img src="img/kanye.png" alt="Gates" class="kanye">
+      <h2 class='test-name'>Kanye West</h2>
+      <p class="test-des">This app is just like me. F*cking genius.</p>
+    </div>
+  </div>
+
+  <!-- Listen to millions of songs -->
+
+  <div id="one">
+    <div id="onetext">
+      <h1 id="hone">Listen to millions of songs.</h1>
+      <p id="pone"> From the newest single to the oldest album. We got it.</p>
+    </div>
+    <img src="img/album-covers.png" alt="Album Covers" class="onepic">
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <script src="js/script.js">
+  </script>
 </body>
 
 </html>
